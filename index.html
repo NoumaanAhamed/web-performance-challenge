@@ -6,11 +6,16 @@
   <meta name="description" content="A fast, accessible demo site for performance improvements." />
   <meta name="theme-color" content="#ffffff" />
   <title>The Rum Diary</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
 
   <link rel="preload" href="fonts/alegreya-v29-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/alegreya-v29-latin-900.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/variables.css" />
+  <link rel="stylesheet" href="styles/generics.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/fonts.css" />
   <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 768px)" />
 
   <script src="script/app.js" defer></script>
@@ -52,7 +57,7 @@
       <div class="main__hero main__section">
         <div class="hero__carousel div1">
           <figure>
-            <img src="assets/bite.webp" alt="Local restaurants optimising time to first bite" decoding="async" loading="eager">
+            <img src="assets/bite.webp" alt="Local restaurants optimising time to first bite" decoding="async" loading="eager" fetchpriority="high">
             <figcaption class="swiper-text">Local restaurants finally optimising time to first bite</figcaption>
           </figure>
         </div>
