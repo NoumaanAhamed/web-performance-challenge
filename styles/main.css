@@ -31,6 +31,22 @@ body {
 .main__content img {
   width: 100%;
 }
+
+/* Reserve space to reduce CLS on images */
+.hero__carousel img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.hero__img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.teaser__image {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
   
 .div1 { grid-area: 1 / 1 / 3 / 2; }
 .div2 { grid-area: 1 / 2 / 2 / 3; }
