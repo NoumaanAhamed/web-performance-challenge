@@ -58,6 +58,15 @@ body {
   justify-content: space-between;
 }
 
+/* Improve touch targets for mobile */
+.navigation__link, .teaser__link, .form__button {
+  padding: 10px 14px;
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
 .main__section {
   margin-bottom: 30px;
 }
