@@ -42,6 +42,14 @@ const cookieLayerInit = () => {
 const initApp = () => {
   dynamicContent();
   cookieLayerInit();
+  const playBtn = document.getElementById('video-play');
+  if (playBtn) {
+    playBtn.addEventListener('click', () => {
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = '<iframe src="https://player.vimeo.com/video/44265326?h=1e8b36c00b&loop=0&byline=0&muted=1&controls=1" width="640" height="360" title="Lighthouse video" loading="eager" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>';
+      playBtn.replaceWith(wrapper.firstChild);
+    });
+  }
 };
 
 document.addEventListener('DOMContentLoaded', initApp);
